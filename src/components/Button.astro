@@ -1,0 +1,14 @@
+---
+const { variant } = Astro.props;
+---
+
+<a href="/design" <slot> class={variant} </a>
+
+<style>
+  .ghost {
+    background: none;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+</style>

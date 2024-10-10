@@ -1,0 +1,36 @@
+---
+// a) Flyt styles-mappen fra /public til /src
+// b) import "../styles/global.css";
+import "../styles/global.css";
+
+// Importer components her
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import CardSection from "../components/CardSection.astro";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Øvelse: Componentize</title>
+  </head>
+  <body>
+    <!-- Insæt Header her -->
+    <Header />
+    <main>
+      <!-- Indsæt Hero her -->
+      <Hero />
+      <!-- Indsæt CardSection her (som indeholder Cards) -->
+      <Card title="Hej" />
+      <Card title="Hej2" />
+      <CardSection />
+    </main>
+    <!-- Indsæt Footer her -->
+    <Footer />
+  </body>
+</html>
